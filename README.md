@@ -71,3 +71,43 @@ To https://github.com/berniceu/git-cafe-exercise.git
  * [new branch]      ft/menu -> ft/menu
 branch 'ft/menu' set up to track 'origin/ft/menu'.
 ```
+
+### Exercise 2
+
+```bash
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git checkout fix/bug
+error: pathspec 'fix/bug' did not match any file(s) known to git
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git checkout -b fix/bug
+Switched to a new branch 'fix/bug'
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git add .
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git commit -m "fix title"
+[fix/bug 8f5556a] fix title
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git push
+fatal: The current branch fix/bug has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin fix/bug
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\HOSA.LTD\git-cafe-exercise> git push --set-upstream origin fix/bug
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 294 bytes | 294.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.  
+remote:
+remote: Create a pull request for 'fix/bug' on GitHub by visiting:     
+remote:      https://github.com/berniceu/git-cafe-exercise/pull/new/fix/bug
+remote:
+To https://github.com/berniceu/git-cafe-exercise.git
+ * [new branch]      fix/bug -> fix/bug
+branch 'fix/bug' set up to track 'origin/fix/bug'.
+```
+
+### Exercise 3
+

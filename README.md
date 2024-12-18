@@ -57,3 +57,42 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/sjamillah/git-cafe-exercise.git
    d1d3f9c..d296d18  main -> main
 ```
+2. Bundle 6 Exercise 1
+- On the `git-cafe-exercise` repo create a new feature branch
+- Add new changes related to a new page named `Menu`
+- Afterward, raise a new PR
+- Request review
+
+Solution:
+``` bash
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git checkout -b feature
+Switched to a new branch 'feature'
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git add --all
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git commit -m "menu of the restaurant"
+[feature 50843cf] menu of the restaurant
+ 6 files changed, 2182 insertions(+), 2093 deletions(-)
+ create mode 100644 menu.html
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git push
+fatal: The current branch feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature
+
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git push --set-upstream origin feature
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 8.83 KiB | 273.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.  
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:     
+remote:      https://github.com/sjamillah/git-cafe-exercise/pull/new/feature
+remote:
+To https://github.com/sjamillah/git-cafe-exercise.git
+ * [new branch]      feature -> feature
+Branch 'feature' set up to track remote branch 'feature' from 'origin'.
+```

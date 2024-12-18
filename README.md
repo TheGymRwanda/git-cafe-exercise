@@ -96,3 +96,49 @@ To https://github.com/sjamillah/git-cafe-exercise.git
  * [new branch]      feature -> feature
 Branch 'feature' set up to track remote branch 'feature' from 'origin'.
 ```
+3. Bundle 6 Exercise 2
+- Create a new bug fix branch
+- From there change the title of the `index-4.html` file to “**Contact**”
+- Raise a new PR
+- Request review
+
+Solution:
+``` bash
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git checkout -b bug/fix
+Switched to a new branch 'bug/fix'
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git add index-4.html 
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git commit -m "changed the title from Menu to Contact"
+[bug/fix d7230f3] changed the title from Menu to Contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git push
+fatal: The current branch bug/fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug/fix
+
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git push --set-upstream origin bug/fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 63.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.  
+remote:
+remote: Create a pull request for 'bug/fix' on GitHub by visiting:     
+remote:      https://github.com/sjamillah/git-cafe-exercise/pull/new/bug/fix
+remote:
+To https://github.com/sjamillah/git-cafe-exercise.git
+ * [new branch]      bug/fix -> bug/fix
+Branch 'bug/fix' set up to track remote branch 'bug/fix' from 'origin'.
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git pull
+remote: Enumerating objects: 1, done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 1 (from 1)  
+Unpacking objects: 100% (1/1), 920 bytes | 70.00 KiB/s, done.
+From https://github.com/sjamillah/git-cafe-exercise
+   a87212f..18fa35c  main       -> origin/main
+Already up to date.
+```

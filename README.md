@@ -142,3 +142,39 @@ From https://github.com/sjamillah/git-cafe-exercise
    a87212f..18fa35c  main       -> origin/main
 Already up to date.
 ```
+3. Bundle 6 Exercise 3
+- On the `git-cafe-exercise` repo, there is a small hot-fix on the contact page
+- Change the telephone on the `index-4.html` page from `+1 800 603 6035` to `+1 800 659 6035`
+
+Solution: 
+``` bash
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git checkout -b ft/hot-fix
+Switched to a new branch 'ft/hot-fix'
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git add index-4.html 
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git commit -m "changed the hot fix"
+[ft/hot-fix 611c51f] changed the hot fix
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$ git push
+fatal: The current branch ft/hot-fix has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/hot-fix
+
+jamillah@DESKTOP-533N1K0:/mnt/c/Users/LENOVO/Desktop/git-cafe-exercise$
+ git push --set-upstream origin ft/hot-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 299 bytes | 49.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.  
+remote:
+remote: Create a pull request for 'ft/hot-fix' on GitHub by visiting:  
+remote:      https://github.com/sjamillah/git-cafe-exercise/pull/new/ft/hot-fix
+remote:
+To https://github.com/sjamillah/git-cafe-exercise.git
+ * [new branch]      ft/hot-fix -> ft/hot-fix
+Branch 'ft/hot-fix' set up to track remote branch 'ft/hot-fix' from 'origin'.
+```

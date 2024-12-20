@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: green;
+        }
+
+        header {
+            background-color: green;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+        }
+
+        .category h2 {
+            background-color: green;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .item:last-child {
+            border-bottom: none;
+        }
+
+        .item-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .item-price {
+            font-size: 18px;
+            color: #e67e22;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: green;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Restaurant Menu</h1>
+    <p>Fresh and delicious food, made with love!</p>
+</header>
+
+<div class="container">
+    <!-- Appetizers Section -->
+    <div class="category">
+        <h2>Appetizers</h2>
+        <div class="item">
+            <span class="item-name">Bruschetta</span>
+            <span class="item-price">$7.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Stuffed Mushrooms</span>
+            <span class="item-price">$8.49</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Garlic Bread</span>
+            <span class="item-price">$4.99</span>
+        </div>
+    </div>
+
+    <!-- Mains Section -->
+    <div class="category">
+        <h2>Main Courses</h2>
+        <div class="item">
+            <span class="item-name">Spaghetti Carbonara</span>
+            <span class="item-price">$12.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Grilled Salmon</span>
+            <span class="item-price">$16.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Chicken Parmesan</span>
+            <span class="item-price">$14.49</span>
+        </div>
+    </div>
+
+    <!-- Desserts Section -->
+    <div class="category">
+        <h2>Desserts</h2>
+        <div class="item">
+            <span class="item-name">Tiramisu</span>
+            <span class="item-price">$5.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Chocolate Lava Cake</span>
+            <span class="item-price">$6.49</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Panna Cotta</span>
+            <span class="item-price">$4.99</span>
+        </div>
+    </div>
+
+    <!-- Beverages Section -->
+    <div class="category">
+        <h2>Beverages</h2>
+        <div class="item">
+            <span class="item-name">House Wine</span>
+            <span class="item-price">$8.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Espresso</span>
+            <span class="item-price">$2.99</span>
+        </div>
+        <div class="item">
+            <span class="item-name">Lemonade</span>
+            <span class="item-price">$3.49</span>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Our Restaurant | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
